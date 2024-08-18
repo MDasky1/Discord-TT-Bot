@@ -1,4 +1,6 @@
 from datetime import datetime
+from enum import member
+
 import discord
 from discord.ext import commands
 import os
@@ -24,6 +26,10 @@ try:
 except FileNotFoundError:
     print('Previous contest winners file was not found.')
 
+def UpdateContestWinners():
+    with open('contestwinners.pickle', 'wb') as handle:
+        pickle.dump(contestwinners, handle)
+
 '''
 Initialization routine for the Bot. Prints the bot username when logged in.
 Generates records for new users and updates the contest winners file.
@@ -34,12 +40,28 @@ async def on_ready():
     for member in bot.get_all_members():
         if not contestwinners.get(member.id, 0):
             contestwinners[member.id] = [member.name, False, datetime(2000, 1, 1,0,0,0)]
+            print('New record addred for: ' + member.name)
     print(contestwinners)
-    with open('contestwinners.pickle', 'wb') as handle:
-        pickle.dump(contestwinners, handle)
+    UpdateContestWinners()
 
 @bot.command()
 async def hello(ctx):
     await ctx.send('Hello!')
+
+# Handle a user's entry into the contest.
+@bot.command()
+async def enter(ctx):
+    for member in bot.get_all_members():
+        if not contestwinners.get(ctx.message.author.id, 0):
+            contestwinners[ctx.message.author.id] = [member.name, False, datetime(2000, 1, 1,0,0,0)]
+    oldrecord = contestwinners[ctx.message.author.id]
+    if oldrecord[1]:
+        await ctx.send(" you are already entered in the contest")
+
+    else:
+        oldrecord[1] = True
+        contestwinners[ctx.message.author.id] = oldrecord
+        await ctx.send(" you are now entered in the contest")
+    UpdateContestWinners()
 
 bot.run(os.environ['DISCORD_TOKEN'])
