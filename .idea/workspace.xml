@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a96d3c-3001-400c-96d9-4e8ab42ce271" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/Discord TT-Bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Discord TT-Bot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="84a96d3c-3001-400c-96d9-4e8ab42ce271" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +126,7 @@
       <workItem from="1723323484259" duration="82000" />
       <workItem from="1723955623943" duration="4566000" />
       <workItem from="1723960218419" duration="3877000" />
-      <workItem from="1723964230338" duration="2709000" />
+      <workItem from="1723964230338" duration="3366000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -140,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723168645470</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1723967585221</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723967585221</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
