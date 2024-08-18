@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a96d3c-3001-400c-96d9-4e8ab42ce271" name="Changes" comment="Added a field to determine if the user is entered in the contest or not.">
+    <list default="true" id="84a96d3c-3001-400c-96d9-4e8ab42ce271" name="Changes" comment="Added the ability to enter into a contest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -129,7 +129,7 @@
       <workItem from="1723323484259" duration="82000" />
       <workItem from="1723955623943" duration="4566000" />
       <workItem from="1723960218419" duration="3877000" />
-      <workItem from="1723964230338" duration="6531000" />
+      <workItem from="1723964230338" duration="7975000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723968382189</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added the ability to enter into a contest">
+      <option name="closed" value="true" />
+      <created>1723971083572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723971083572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,9 +191,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added a field to determine if the user is entered in the contest or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a field to determine if the user is entered in the contest or not." />
+    <MESSAGE value="Added the ability to enter into a contest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to enter into a contest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Discord_TT_Bot$main.coverage" NAME="main Coverage Results" MODIFIED="1723970780788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Discord_TT_Bot$main.coverage" NAME="main Coverage Results" MODIFIED="1723972181482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

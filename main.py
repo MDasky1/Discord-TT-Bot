@@ -56,12 +56,12 @@ async def enter(ctx):
             contestwinners[ctx.message.author.id] = [member.name, False, datetime(2000, 1, 1,0,0,0)]
     oldrecord = contestwinners[ctx.message.author.id]
     if oldrecord[1]:
-        await ctx.send(" you are already entered in the contest")
+        await ctx.send(f'{ctx.message.author}, you are already entered in the contest')
 
     else:
         oldrecord[1] = True
         contestwinners[ctx.message.author.id] = oldrecord
-        await ctx.send(" you are now entered in the contest")
+        await ctx.send(f'{ctx.message.author}, you are now entered in the contest')
     UpdateContestWinners()
 
 bot.run(os.environ['DISCORD_TOKEN'])
